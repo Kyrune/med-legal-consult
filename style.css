@@ -16,6 +16,11 @@ theme. But don't modify style-main.css file.
   display: none;
 }
 
+/* Removes phone icon for mobile use only */
+.header-phone {
+  display: none;
+}
+
 /* Adjusts height of Navigation icons */
 .fa-home,
 .fa-pencil-square-o {
@@ -53,6 +58,11 @@ theme. But don't modify style-main.css file.
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1rem;
+}
+
+/* Removes Home page logo with white text for mobile use only */
+.mobile-logo-light {
+  display: none;
 }
 
 /* Home page text box (blue) */
@@ -126,6 +136,11 @@ theme. But don't modify style-main.css file.
 /* Adds margin-top to About section's Bethel App Photo */
 #img-marginTop {
   margin-top: 3rem;
+}
+
+/* Removes <br> in About section until smaller screens (in media query below) */
+.text-break {
+  display: none;
 }
 
 /* Adds bullet-points & extra padding-left to ul in About/Service sections */
@@ -213,13 +228,30 @@ theme. But don't modify style-main.css file.
 
 /***** Media Queries *****/
 
-/* Changes logo from white to black to show up on white menu bar (for smaller screens) */
 @media (max-width: 900px) {
+  /* Changes logo from white to black to show up on white menu bar (for smaller screens) */
   .black-logo {
     display: block;
   }
 
   .white-logo {
+    display: none;
+  }
+
+  /* Adds phone icon */
+  .header-phone {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 5em;
+  }
+
+  /* Switches Home page logo from blue text to white */
+  .mobile-logo-light {
+    display: block;
+  }
+
+  .mobile-logo-dark {
     display: none;
   }
 }
@@ -274,5 +306,12 @@ theme. But don't modify style-main.css file.
     font-size: 15px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+}
+
+/* Breaks About text into smaller chunks */
+@media (max-width: 1000px) {
+  .text-break {
+    display: block;
   }
 }
