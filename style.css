@@ -1,0 +1,278 @@
+/*
+@Author: ThemeMascot
+@URL: http://ThemeMascot.com
+
+This is the file where you can add your custom styles to change the look of the
+theme. But don't modify style-main.css file.
+
+*/
+
+/* Your custom css codes start here: */
+
+/***** Header *****/
+
+/* Removes black navigation logo until small-screen hamburger shows (because nav turns white, switching to black logo makes it visible) */
+.black-logo {
+  display: none;
+}
+
+/* Adjusts height of Navigation icons */
+.fa-home,
+.fa-pencil-square-o {
+  padding-top: .3rem;
+}
+
+.fa-user {
+  padding-top: .2rem;
+}
+
+.fa-balance-scale {
+  padding-top: .1rem;
+}
+
+/* Adds margin-left to Navigation phone # */
+.phone-marginLeft {
+  margin-left: 1rem;
+}
+
+/* Adjusts logo size in list of social links */
+.header-logo {
+  max-width: 80px;
+  margin-top: -1.5rem;
+  margin-bottom: 1rem;
+}
+
+/***** Home *****/
+
+/* Sizes/positions Home page Logo */
+.logo-img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin-top: -9rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+/* Home page text box (blue) */
+#boxed {
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 2px solid rgba(1, 162, 208, 0.9);
+}
+
+/* Styles Carousel Caption text with background color */
+.caption-styling {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 30%;
+  box-shadow: 0 0 5px white;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Ensures top and bottom padding are even in Carousel Caption background color */
+.caption-styling h3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Adds padding between Carousel Modal's p tags */
+.border-top {
+  padding-top: .5rem;
+}
+
+/* Pushes Carousel's Modal Caption title up (for negative space) */
+.caption-title {
+  padding-bottom: 1rem;
+}
+
+/* Recolors text in Carousel's Modals */
+.text-recolor {
+  color: black;
+}
+
+/* Removes extra bottom margin in Home page */
+.home-marginBottom {
+  margin-bottom: -5rem;
+}
+
+/* Helps position carousel-btns/#boxed element in smaller screen sizes */
+.boxed-marginBottom {
+  margin-bottom: -5rem;
+}
+
+/***** Intro Video *****/
+
+/* Adds extra padding to Video section's top to make it equal to the bottom */
+#intro-video {
+  padding-top: 3rem;
+}
+
+/* Adds margin to top of intro-video's summary */
+.video-summary {
+  margin-top: 2rem;
+}
+
+/***** About *****/
+
+/* Adds margin-top to Divider/About section */
+.extra-top {
+  margin-top: 4rem;
+}
+
+/* Adds margin-top to About section's Bethel App Photo */
+#img-marginTop {
+  margin-top: 3rem;
+}
+
+/* Adds bullet-points & extra padding-left to ul in About/Service sections */
+.bullet-point {
+  list-style-type: disc;
+  padding-left: .5rem;
+}
+
+/* Adds circle bullet-point to nested ul */
+.circle-bullet {
+  list-style-type: circle;
+}
+
+/***** Service *****/
+
+/* Adds margin-bottom to price list in Service section */
+.price-list {
+  margin-bottom: .5rem;
+}
+
+/***** Contact *****/
+
+/* Makes "Party to Suit" dropdown selection-text the same color as the rest of Contact section text */
+.suit-option {
+  color: #777777;
+}
+
+/* Used in jQuery for dropdown text color */
+.placeholder {
+  color: #999999;
+}
+
+/***** Appointment *****/
+
+/* Adds blue border/padding/background color to the Appointment section */
+#bordered {
+  border: 2px solid rgba(1, 162, 208, 0.9);
+  padding: 1rem;
+  background-color: white;
+}
+
+/***** Footer *****/
+
+/* Adds padding to top of the footer's Romans verse */
+.verse-padding {
+  padding-top: 1rem;
+}
+
+/***** Modals *****/
+ 
+.modal-backdrop.in {
+  filter: alpha(opacity=7);
+  opacity: 0.7;
+}
+
+.modal-content {
+  background: none;
+  border: 0;
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+.modal-body {
+  padding: 0 25px 25px 25px;
+}
+
+.modal-header {
+  padding: 15px 15px 15px 15px;
+  text-align: right;
+}
+
+.modal-header, .modal-footer {
+  border: 0;
+}
+
+.modal-header .close {
+  float: none;
+  margin: 0;
+  font-size: 36px;
+  color: white;
+  font-weight: 300;
+  text-shadow: none;
+  opacity: 1;
+}
+
+/***** Media Queries *****/
+
+/* Changes logo from white to black to show up on white menu bar (for smaller screens) */
+@media (max-width: 900px) {
+  .black-logo {
+    display: block;
+  }
+
+  .white-logo {
+    display: none;
+  }
+}
+
+/* Changes Home page box width on smaller screens */
+@media (max-width: 680px) {
+  #boxed {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* Queries adjust Carousel Caption & "Read More" button's height */
+@media (min-width: 601px) {
+  .carousel-caption {
+    margin-bottom: 7rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .carousel-caption {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Changes "Read More" button in the Carousel (for larger screens) */
+@media (min-width: 767px) {
+  .btn-modal {
+    font-size: 1em;
+    padding-top: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+  }
+}
+
+@media (min-width: 501px) {
+  .caption-styling {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Changes Carousel Caption (for smaller screen) */
+@media (max-width: 500px) {
+  .caption-styling {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  .caption-styling h3 {
+    font-size: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
