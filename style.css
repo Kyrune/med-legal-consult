@@ -243,11 +243,12 @@ theme. But don't modify style-main.css file.
     display: none;
   }
 
-  /* Adds phone icon */
+  /* Adds phone number to Home page */
   .header-phone {
     display: block;
     text-align: center;
     margin-bottom: 2rem;
+    color: white;
   }
 
   /* Switches Home page logo from blue text to white */
