@@ -138,6 +138,11 @@ theme. But don't modify style-main.css file.
   margin-top: 3rem;
 }
 
+/* Adds margin-top to Legal Experience h4 title */
+.h4-marginTop {
+  margin-top: 1.5rem;
+}
+
 /* Removes <br> in About section until smaller screens (in media query below) */
 .text-break {
   display: none;
@@ -243,7 +248,6 @@ theme. But don't modify style-main.css file.
     display: block;
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 5em;
   }
 
   /* Switches Home page logo from blue text to white */
