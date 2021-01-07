@@ -78,9 +78,7 @@ theme. But don't modify style-main.css file.
 .caption-styling {
   padding-top: 0;
   padding-bottom: 0;
-  border-radius: 30%;
-  box-shadow: 0 0 5px white;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Ensures top and bottom padding are even in Carousel Caption background color */
@@ -103,6 +101,26 @@ theme. But don't modify style-main.css file.
 .text-recolor {
   color: black;
 }
+
+/* Centers phone # carousel's modal */
+.modal-btn-container {
+  text-align: center;
+}
+
+/* Add padding to right of phone # on carousel's modal */
+.phone-i-space {
+  padding-right: .2rem;
+}
+
+/* Recolors Carousel's Modal's phone # btn to white */
+/* .modal-text-white {
+  color: white;
+  text-decoration: none;
+} */
+
+/* .modal-text-white:hover {
+  color: white;
+} */
 
 /* Removes extra bottom margin in Home page */
 .home-marginBottom {
