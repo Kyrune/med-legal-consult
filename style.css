@@ -112,16 +112,6 @@ theme. But don't modify style-main.css file.
   padding-right: .2rem;
 }
 
-/* Recolors Carousel's Modal's phone # btn to white */
-/* .modal-text-white {
-  color: white;
-  text-decoration: none;
-} */
-
-/* .modal-text-white:hover {
-  color: white;
-} */
-
 /* Removes extra bottom margin in Home page */
 .home-marginBottom {
   margin-bottom: -5rem;
